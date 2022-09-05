@@ -1,5 +1,6 @@
-import ReactDom from "react-dom";
 import React, { Fragment } from "react";
+
+import { Portal } from "../portal";
 
 import "./Modal.style.css";
 
@@ -16,7 +17,5 @@ export default function Modal({ opened, children, handleOpen }) {
     </div>
   );
 
-  return (
-    <Fragment>{ReactDom.createPortal(ModalContainer, document.body)}</Fragment>
-  );
+  return <Portal>${ModalContainer}</Portal>;
 }
