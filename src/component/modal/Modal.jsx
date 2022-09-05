@@ -17,5 +17,5 @@ export default function Modal({ opened, children, handleOpen }) {
     </div>
   );
 
-  return <Portal>${ModalContainer}</Portal>;
+  return <Portal>{ModalContainer}</Portal>;
 }
