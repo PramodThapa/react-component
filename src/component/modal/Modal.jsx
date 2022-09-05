@@ -1,6 +1,6 @@
 import React, { Fragment } from "react";
 
-import { Portal } from "../portal";
+import Portal from "../portal";
 
 import "./Modal.style.css";
 
